@@ -6,10 +6,15 @@
   "dependencies": {
     "az": "^0.2.3"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo 'test'"
+  "devDependencies": {
+    "coveralls": "^3.0.13",
+    "jest": "^25.4.0"
   },
-  "author": "",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "coverage": "jest --detectOpenHandles --coverage",
+    "coveralls": "jest --detectOpenHandles --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "ars-git",
   "license": "ISC"
 }

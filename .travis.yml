@@ -1,0 +1,18 @@
+sudo: false
+
+language: node_js
+node_js:
+  - 9
+
+addons:
+  sonarcloud:
+    organization: "ars-git"
+    token: "c2e8f65635ce292cd0e0fd9fd25303cec0fe3d88"
+
+script:
+  - sonar-scanner -X
+  - npm run coveralls
+
+branches:
+  only:
+    - master
