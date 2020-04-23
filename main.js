@@ -56,8 +56,10 @@ const rl = readline.createInterface({
 
 rl.question('Путь к файлу: ', (answer) => {
     morph.init(`${answer}`);
-    rl.close();
 });
+rl.close();
+
+
 
 function sum(a, b) {
     return a + b;

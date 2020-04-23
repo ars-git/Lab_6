@@ -1,7 +1,6 @@
 {
   "name": "work_4",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "dependencies": {
     "az": "^0.2.3"
@@ -16,5 +15,14 @@
     "coveralls": "jest --detectOpenHandles --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "author": "ars-git",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ars-git/Lab_6.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ars-git/Lab_6/issues"
+  },
+  "homepage": "https://github.com/ars-git/Lab_6#readme",
+  "description": ""
 }
